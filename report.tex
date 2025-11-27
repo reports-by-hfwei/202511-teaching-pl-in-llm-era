@@ -6,9 +6,23 @@
 
 \input{preamble}
 \input{newcommands}
+
+% Additional packages for this presentation
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  language=C,
+  showstringspaces=false
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title[]{Beamer Template for Reports}
-\subtitle{\teal{(Conference VLDB'2022)}}
+\title[Teaching PL in the LLM Era]{Teaching Programming Languages \\
+in the Era of Large Language Models}
+\subtitle{\teal{What to Teach, What Not to Teach, and Why}}
 
 \author[Hengfeng Wei]{Hengfeng Wei}
 \titlegraphic{
@@ -21,6 +35,20 @@
 \maketitle
 %%%%%%%%%%%%%%%%%%%%
 \input{sections/intro}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/motivation}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/core-concepts}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/de-emphasize}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/emphasize-more}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/case-studies}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/llm-integration}
+%%%%%%%%%%%%%%%%%%%%
+\input{sections/conclusion}
 %%%%%%%%%%%%%%%%%%%%
 \thankyou{}
 %%%%%%%%%%%%%%%%%%%%

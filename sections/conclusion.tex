@@ -1,16 +1,92 @@
 % conclusion.tex
+% Section 7: Conclusion
 
 %%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Conclusion}
-  \begin{center}
-    \unistore{} is a \red{fast}, \red{scalable}, and \red{fault-tolerant} \\[8pt]
-    \blue{transactional} distributed key-value store \\[8pt]
-    that supports a \red{combination of weak and strong consistency}.
+\section{Conclusion}
+%%%%%%%%%%%%%%%%%%%%
 
-    \pause
-    \vspace{0.80cm}
-    ``We expect the key ideas in \unistore{} to pave the way \\[3pt]
-    for practical systems that combine causal and strong consistency.''
-  \end{center}
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Key Takeaways and Summary}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Teaching Principles:}
+      \begin{enumerate}
+        \item Shift focus from syntax to semantics
+        \item Emphasize history and design rationale
+        \item Teach execution and memory models
+        \item Use LLMs as tools, not answers
+        \item Design assessments for reasoning
+      \end{enumerate}
+      
+      \vspace{0.3cm}
+      
+      \textbf{\teal{Keep Teaching:}}
+      \begin{itemize}
+        \item Historical development
+        \item Design philosophy
+        \item Execution/memory models
+        \item Cost models \& security
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\red{De-emphasize:}}
+      \begin{itemize}
+        \item Syntax trivia
+        \item Precedence rules
+        \item API memorization
+        \item ``Gotcha'' questions
+        \item Language lawyering
+      \end{itemize}
+      
+      \vspace{0.3cm}
+      
+      \begin{block}{Guiding Principle}
+        Teach what LLMs \textit{cannot} do: deep reasoning, historical context, design judgment.
+      \end{block}
+    \end{column}
+  \end{columns}
+  
+  % Speaker note: These principles apply across languages and domains
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{References and Final Thoughts}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Key References:}
+      \begin{itemize}
+        \item Ritchie, ``The Development of the C Language'' (1993)
+        \item K\&R, ``The C Programming Language'' (1988)
+        \item Plauger, ``The Standard C Library'' (1992)
+        \item ISO/IEC 9899:2023 (C23)
+        \item C99 Rationale (V5.10)
+        \item SEI CERT C Coding Standard
+        \item ACM Queue ``Catch-23'' (2023)
+        \item Perlis, ``Epigrams on Programming''
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{center}
+        \begin{quote}
+          ``A language that doesn't affect the way you think about programming is not worth knowing.''
+          
+          \hfill --- \textit{Perlis, Epigram \#19}
+        \end{quote}
+        
+        \vspace{0.5cm}
+        
+        \textbf{Our goal:} \\
+        Train students who \underline{think}, \\
+        not students who \underline{memorize}.
+        
+        \vspace{0.3cm}
+        
+        \textit{LLMs make this more important---and more achievable---than ever.}
+      \end{center}
+    \end{column}
+  \end{columns}
+  
+  % Speaker note: End with inspiration and call to action
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%
