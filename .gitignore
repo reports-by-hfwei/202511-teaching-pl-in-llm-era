@@ -283,6 +283,4 @@ mongodb-tx.pdf
 .clj-kondo/
 .lsp/
 
-# VLDB-README
-VLDB-README.md
-VLDB-Submit-Guide.md
+*.mp4
