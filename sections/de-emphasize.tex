@@ -1,0 +1,138 @@
+% de-emphasize.tex
+% Section 3: What Should Be DE-Emphasized
+
+%%%%%%%%%%%%%%%%%%%%
+\section{What Should Be DE-Emphasized}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Topics to Reduce or Remove}
+  \begin{center}
+    \textbf{LLMs excel at syntax trivia and mechanical tasks.} \\
+    \textit{Stop testing what machines do better.}
+  \end{center}
+  
+  \vspace{0.5cm}
+  
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{\red{De-emphasize:}}
+      \begin{itemize}
+        \item Syntax corner cases
+        \item Operator precedence trivia
+        \item Rarely-used features
+        \item Mechanical library usage
+        \item Boilerplate patterns
+        \item Man-page memorization
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{\teal{Replace with:}}
+      \begin{itemize}
+        \item Semantic understanding
+        \item Design rationale
+        \item Trade-off analysis
+        \item Cost model reasoning
+        \item Security awareness
+        \item Debugging skills
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  
+  % Speaker note: The goal is to shift from "syntax lawyers" to "language architects"
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Examples of Outdated Teaching Content}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Precedence Trivia:}
+      \begin{block}{Don't Test}
+\begin{verbatim}
+int y = 3 + x++ * 2;
+// What is y?
+\end{verbatim}
+      \end{block}
+      
+      \textbf{Better:} ``Why does the Google C++ Style Guide recommend explicit parentheses?''
+      
+      \vspace{0.3cm}
+      
+      \textbf{Rare Features:}
+      \begin{block}{Trigraphs (C23 removed)}
+\begin{verbatim}
+??= -> #  // Obsolete
+\end{verbatim}
+      \end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{API Memorization:}
+      
+      \textbf{Don't:} ``List all \texttt{strftime()} parameters.''
+      
+      \textbf{Do:} ``Identify the security vulnerability:''
+      \begin{block}{Better Question}
+\begin{verbatim}
+void log(char *input) {
+  char buf[64];
+  sprintf(buf, input, ...);
+}
+// Format string vuln!
+\end{verbatim}
+      \end{block}
+    \end{column}
+  \end{columns}
+  
+  % Speaker note: Focus on understanding, not memorization
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{Low-Value Content and the ``Language Lawyer'' Anti-Pattern}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Don't Waste Time On:}
+      
+      \textbf{Format specifiers:}
+      \begin{itemize}
+        \item Don't: ``What's \texttt{\%lld}?''
+        \item Do: ``When use inttypes.h?''
+      \end{itemize}
+      
+      \textbf{Type conversions:}
+      \begin{itemize}
+        \item Don't: ``unsigned + signed = ?''
+        \item Do: ``Why is this a security risk?''
+      \end{itemize}
+      
+      \textbf{Implementation details:}
+      \begin{itemize}
+        \item Don't: ``Size of int on x86-64?''
+        \item Do: ``Why implementation-defined?''
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \begin{alertblock}{Language Lawyer}
+        Knows every obscure rule but cannot design or debug real systems.
+      \end{alertblock}
+      
+      \textbf{Signs of Bad Teaching:}
+      \begin{itemize}
+        \item Exams focus on edge cases
+        \item Students memorize, not understand
+        \item No real-world connection
+      \end{itemize}
+      
+      \vspace{0.2cm}
+      
+      \begin{quote}
+        \footnotesize
+        ``A language that doesn't affect the way you think about programming is not worth knowing.'' --- \textit{Perlis}
+      \end{quote}
+    \end{column}
+  \end{columns}
+  
+  % Speaker note: Reference Perlis's Epigrams on Programming
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%
